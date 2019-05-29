@@ -10,11 +10,12 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
     ```
     $ brew install node
     ```
-2. Sauce Credentials
+2. Sauce Credentials and Tunnel ID
     * In the terminal export your Sauce Labs Credentials as environmental variables:
     ```
     $ export SAUCE_USERNAME=<your Sauce Labs username>
 	$ export SAUCE_ACCESS_KEY=<your Sauce Labs access key>
+    $ export SAUCE_CONNECT_TUNNEL_ID=<tunnel_identifier_string>
     ```
 3. Wonderproxy Credentials
     * In the terminal export your Wonderproxy Credentials as environmental variables:
@@ -41,7 +42,7 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 * Targeting the Sauce Connect tunnel
     * In the `wdio.conf.js` point your desired capability at the newly started `tunnelIdentifier`.
     ```
-    browserName: 'chrome', platform: 'Windows 10', version: 'latest',, tunnelIdentifier: <tunnelIdentifier>}
+    browserName: 'chrome', platform: 'Windows 10', version: 'latest',, tunnelIdentifier: process.env.SAUCE_CONNECT_TUNNEL_ID}
     ```
 * Tests in Parallel:
 	```

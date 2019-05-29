@@ -56,8 +56,8 @@ exports.config = {
         // 5 instance gets started at a time.
         //maxInstances: 5,
         //
-      {browserName: 'chrome', platform: 'Windows 10', version: 'latest', extendedDebugging: true, capturePerformance: true},
-      {browserName: 'chrome', platform: 'Windows 10', version: 'latest', tunnelIdentifier: 'wp_india_demo', extendedDebugging: true, capturePerformance: true}
+      {browserName: 'chrome', platform: 'Windows 10', version: 'latest'},
+      {browserName: 'chrome', platform: 'Windows 10', version: 'latest', tunnelIdentifier: process.env.SAUCE_CONNECT_TUNNEL_ID}
     ],
     //
     // ===================
