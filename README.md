@@ -38,6 +38,11 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 ### Running Tests
 
+* Targeting the Sauce Connect tunnel
+    * In the `wdio.conf.js` point your desired capability at the newly started `tunnelIdentifier`.
+    ```
+    browserName: 'chrome', platform: 'Windows 10', version: 'latest',, tunnelIdentifier: <tunnelIdentifier>}
+    ```
 * Tests in Parallel:
 	```
 	$ ./node_modules/.bin/wdio wdio.conf.js
