@@ -28,13 +28,13 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 	```
 	$ npm install
 	```
-### Starting Sauce Connect
-* Download the appropriate binary for your system - [Sauce Connect](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy)
-* Start Sauce Connect with the desired proxy
+5. Starting Sauce Connect
+    * Download the appropriate binary for your system - [Sauce Connect](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy)
+    * Start Sauce Connect with the desired proxy
 
-```
-./sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY --proxy <desired_wonderproxy_server>:11000 --proxy-userpwd $WONDERPROXY_USER:$WONDERPROXY_PASS -i <tunnel_identifier>
- --logfile <abs_path_to_log>```
+    ```
+    ./sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY --proxy <desired_wonderproxy_server>:11000 --proxy-userpwd $WONDERPROXY_USER:$WONDERPROXY_PASS -i <tunnel_identifier>
+    --logfile <abs_path_to_log>```
 
 ### Running Tests
 
