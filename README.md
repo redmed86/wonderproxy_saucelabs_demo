@@ -61,7 +61,7 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 ##### [Mocha Documentation](https://mochajs.org/)
 
-##### [Wonderproxy Documentation] (https://wonderproxy.com/docs)
+##### [Wonderproxy Documentation](https://wonderproxy.com/docs)
 
 ##### [Stack Overflow](http://stackoverflow.com/)
 * A great resource to search for issues not explicitly covered by documentation
